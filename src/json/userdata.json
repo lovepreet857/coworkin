@@ -1,0 +1,38 @@
+[
+    {
+        "profilesvg":"public/svg/users.svg",
+        "name":"Sakshi Mehra",
+        "text":"Freelance Designer – Delhi",
+        "pragraph":"CoWorkMate made it easy to find quiet workspaces while traveling. The booking process is so smooth!”",
+        "star":"public/svg/star.svg",
+        "reating":"4.8",
+        "date":"15May,2024"
+    },
+    {
+        "profilesvg":"public/svg/users2.svg",
+        "name":"Aarav Bansal",
+        "text":"Startup Founder – Bangalore",
+        "pragraph":"I loved how fast I could find a place for my team meetings. No more messy rentals!",
+        "star":"public/svg/star.svg",
+        "reating":"4.7",
+        "date":"20Aprail,2025"
+    },
+    {
+        "profilesvg":"public/svg/users3.svg",
+        "name":"Neha Kapoor",
+        "text":" Remote Project Manager – Pune",
+        "pragraph":"Reliable Wi-Fi, coffee, and a productive environment. I use CoWorkMate 3 times a week!”",
+        "star":"public/svg/star.svg",
+        "reating":"4.9",
+        "date":"15May,2024"
+    },
+    {
+        "profilesvg":"public/svg/users.svg",
+        "name":"Sakshi Mehra",
+        "text":"Freelance Designer – Delhi",
+        "pragraph":"CoWorkMate made it easy to find quiet workspaces while traveling. The booking process is so smooth!”",
+        "star":"public/svg/star.svg",
+        "reating":"4.8",
+        "date":"15May,2024"
+    }
+]

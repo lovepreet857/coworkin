@@ -1,0 +1,78 @@
+[
+    {
+        "mainimg":"public/img/computer_aptop.png",
+        "titel":"UrbanHive Workspace",
+        "locationsvg":"public/svg/featured_location.svg",
+        "locationname":"Bangalore, India",
+        "price":"₹ 400/hr",
+        "stersvg":"public/svg/featured_star.svg",
+        "reviews":"4.9 (210 reviews)",
+         "text1":"Fast WiFi",
+        "text2":"Private Office",
+        "text3":"24/7 Access"
+    },
+      {
+        "mainimg":"public/img/featured_flower.png",
+        "titel":"NovaDesk Studios",
+        "locationsvg":"public/svg/featured_location.svg",
+        "locationname":"Mumbai, India",
+        "price":" ₹199/hr",
+        "stersvg":"public/svg/featured_star.svg",
+        "reviews":"4.7 (132 Reviews)",
+        "text1":"Day Pass",
+        "text2":" Meeting Room",
+        "text3":"Coffee Included"
+
+    },
+     {
+        "mainimg":"public/img/featured_png.png",
+        "titel":"WorkNest Collective",
+        "locationsvg":"public/svg/featured_location.svg",
+        "locationname":"Delhi, India",
+        "price":"₹180/hr",
+        "stersvg":"public/svg/featured_star.svg",
+        "reviews":"4.8 (158 Reviews)",
+       "text1":"Pet Friendly",
+        "text2":"Shared Desk",
+        "text3":" Air Conditioning"
+    },
+     {
+        "mainimg":"public/img/computer_aptop.png",
+        "titel":"UrbanHive Workspace",
+        "locationsvg":"public/svg/featured_location.svg",
+        "locationname":"Bangalore, India",
+        "price":"₹ 400/hr",
+        "stersvg":"public/svg/featured_star.svg",
+        "reviews":"4.9 (210 reviews)",
+         "text1":"Fast WiFi",
+        "text2":"Private Office",
+        "text3":"24/7 Access"
+    },
+      {
+        "mainimg":"public/img/featured_flower.png",
+        "titel":"NovaDesk Studios",
+        "locationsvg":"public/svg/featured_location.svg",
+        "locationname":"Mumbai, India",
+        "price":" ₹199/hr",
+        "stersvg":"public/svg/featured_star.svg",
+        "reviews":"4.7 (132 Reviews)",
+        "text1":"Day Pass",
+        "text2":" Meeting Room",
+        "text3":"Coffee Included"
+
+    },
+     {
+        "mainimg":"public/img/featured_png.png",
+        "titel":"WorkNest Collective",
+        "locationsvg":"public/svg/featured_location.svg",
+        "locationname":"Delhi, India",
+        "price":"₹180/hr",
+        "stersvg":"public/svg/featured_star.svg",
+        "reviews":"4.8 (158 Reviews)",
+       "text1":"Pet Friendly",
+        "text2":"Shared Desk",
+        "text3":" Air Conditioning"
+    }
+    
+    
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "logo":"public/svg/choose_clock.svg",
+        "tetel":"Book in Minutes",
+        "text":"Choose a space and confirm your booking in just a few clicks."
+    },
+     {
+        "logo":"public/svg/choose_check.svg",
+        "tetel":"Verified Spaces",
+        "text":"Only high-quality, fully verified coworking locations."
+    }, {
+        "logo":"public/svg/choose_price.svg",
+        "tetel":"Transparent Pricing",
+        "text":"No hidden charges, pay only for what you use."
+    }, {
+        "logo":"public/svg/choose_wifi.svg",
+        "tetel":"Reliable Amenities",
+        "text":"Fast Wi-Fi, coffee, printers, and more at every location."
+    }, {
+        "logo":"public/svg/choose_call.svg",
+        "tetel":"Customer Support",
+        "text":"24/7 live chat and email support when you need help."
+    }
+]

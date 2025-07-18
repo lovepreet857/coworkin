@@ -1,0 +1,21 @@
+[
+    {
+        "logo":"public/svg/work_location.svg",
+        "tetel":"Browse & Select",
+        "text":"Search by city, filter by amenities, and discover the perfect space."
+    },
+     {
+        "logo":"public/svg/work_date.svg",
+        "tetel":"Choose Your Time",
+        "text":"Pick a date, time, and desk type. Instant confirmation on payment."
+    }, {
+        "logo":"public/svg/work_Frame.svg",
+        "tetel":"Check In & Focus",
+        "text":"Arrive, connect to Wi-Fi, grab coffee, and start being productive!"
+    },
+     {
+        "logo":"public/svg/work_Frame.svg",
+        "tetel":"Check In & Focus",
+        "text":"Arrive, connect to Wi-Fi, grab coffee, and start being productive!"
+    }
+]
