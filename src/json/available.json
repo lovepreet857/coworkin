@@ -1,0 +1,31 @@
+[
+    {
+        "mainimg":"public/img/available1smg.png",
+        "text":"Nexus Offices",
+        "location":"Chandigarh, India",
+        "price":"₹6,619",
+        "star":"public/svg/star.svg",
+        "rating":"4.9"
+    },{
+        "mainimg":"public/img/avaleale2img.png",
+        "text":"Nexus Offices",
+        "location":"Chandigarh, India",
+        "price":"₹6,619",
+        "star":"public/svg/star.svg",
+        "rating":"4.9"
+    },{
+        "mainimg":"public/img/available3img.png",
+        "text":"Nexus Offices",
+        "location":"Chandigarh, India",
+        "price":"₹6,619",
+        "star":"public/svg/star.svg",
+        "rating":"4.9"
+    },{
+        "mainimg":"public/img/available1smg.png",
+        "text":"Nexus Offices",
+        "location":"Chandigarh, India",
+        "price":"₹6,619",
+        "star":"public/svg/star.svg",
+        "rating":"4.9"
+    }
+]

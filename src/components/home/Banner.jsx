@@ -5,10 +5,12 @@ import Bannermaiimg from "../../../public/img/bannetimg1.png";
 import User from "../../../public/svg/banner_user.svg";
 import Date from "../../../public/svg/banner_date.svg";
 import Button from "../ui/Button";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const banner = () => {
+  const [isSearchLoading, setIsSearchLoading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setIsLoading(true);
@@ -57,26 +59,37 @@ const banner = () => {
                   <option value="4">4 persons</option>
                 </select>
               </div>
-             <Button 
-            size="sm"
-             className="leading-[130%] cursor-pointer font-Inter font-normal" onClick={handleClick} loading={isLoading}
-             >
-                 Search
-             </Button>
+              <Button
+                size="sm"
+                className="leading-[130%] cursor-pointer font-Inter font-normal"
+                onClick={handleClick}
+                loading={isLoading}
+              >
+                Search
+              </Button>
             </div>
           </div>
           <div className=" hidden md:flex gap-[32px] mt-5 lg:mt-10">
-             <Button 
-            size="md" 
-             className="leading-[130%] cursor-pointer font-normal font-Inter" >
-            
-                 Explore Workspaces
-             </Button>
-            <Link to={"login"}><Button 
-            size="md"
-            className="leading-[130%] cursor-pointer font-Inter font-normal " >
+            <Button
+              size="md"
+              className="leading-[130%] cursor-pointer font-normal font-Inter"
+            >
+              Explore Workspaces
+            </Button>
+            <Button
+              size="md"
+              loading={isSearchLoading}
+              className="leading-[130%] cursor-pointer font-Inter font-normal"
+              onClick={() => {
+                setIsSearchLoading(true);
+                setTimeout(() => {
+                  setIsSearchLoading(false);
+                  navigate("/login");
+                }, 2000);
+              }}
+            >
               Log In
-             </Button></Link> 
+            </Button>
           </div>
         </div>
         <div className="pb-6 md:pb-0 ">

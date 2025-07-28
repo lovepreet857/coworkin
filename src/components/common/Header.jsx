@@ -48,15 +48,15 @@ const Header = () => {
           ></span>
         </button>
         <div
-          className={`absolute z-52 top-[90px] transition-all duration-500 ease-in-out transform right-[20px] pb-[52px] pl-5 pt-[30px] max-w-[339px] w-full bg-Flash-White rounded-[12px] lg:hidden ${
+          className={`absolute z-52 top-[90px] transition-all duration-500 ease-in-out transform right-[20px] pb-[52px] pl-5 pt-[30px] max-w-[339px] w-full bg-Flash-White rounded-[12px] lg:hidden  ${
             isOpen
               ? "translate-y-0 opacity-100"
               : "-translate-y-4 opacity-0 pointer-events-none"
           }`}
         >
-          <h1 className="font-Inter text-[20px] font-normal leading-[140%] border-b border-Flash-White3 pb-[20px] mb-4 hover:text-natural-blue">
+         <Link to={"/"}> <h1  onClick={() => setIsOpen(!isOpen)} className="font-Inter text-[20px] font-normal leading-[140%] border-b border-Flash-White3 pb-[20px] mb-4 hover:text-natural-blue">
             Home
-          </h1>
+          </h1></Link>
           <h1 className="font-Inter text-[20px] font-normal leading-[140%] border-b border-Flash-White3 pb-[20px] mb-4 hover:text-natural-blue">
             About
           </h1>

@@ -1,0 +1,22 @@
+[
+    {
+        "shortsvg":"public/svg/tings_degree.svg",
+        "text":"Where I went to school: school Kapurthala"
+    },
+      {
+        "shortsvg":"public/svg/tings_bag.svg",
+        "text":"My work: web designer"
+    },
+     {
+        "shortsvg":"public/svg/tings_magic.svg",
+        "text":"My work: web designer"
+    },
+     {
+        "shortsvg":"public/svg/tings_food.svg",
+        "text":"For guest, I always: Make guest at Homewith warmth"
+    },
+      {
+        "shortsvg":"public/svg/tings_user.svg",
+        "text":"i like to spend time with my partnes"
+    }
+]

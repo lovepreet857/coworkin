@@ -5,41 +5,55 @@ import Button from "../components/ui/Button";
 import { Link } from 'react-router-dom';
 import Show from "../../public/svg/forgot_show.svg"
 import { useNavigate } from "react-router-dom";
-const Forgorpass = () => {
-    const navigate = useNavigate();
-    const [show, setShow] = useState(false);
-     const [formData, setFormData] = useState({
-        firstName: "",
-        lastName: "",
-        tel: "",
-        password: "",
-        agree: false,
-      });
+
+const Creatpass = () => {
+        const navigate = useNavigate();
     
-      const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
-        setFormData((prev) => ({
-          ...prev,
-          [name]: type === "checkbox" ? checked : value,
-        }));
-      };
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Submitted:", formData);
-      };
-      const [isLoading, setIsLoading] = useState(false);
-    
-      const handleClick = (e) => {
-         e.preventDefault();
-        setIsLoading(true);
-        setTimeout(() => {
-          setIsLoading(false);
-          navigate("/creatpass");
-        }, 2000);
-      };
+     const [show, setShow] = useState(false);
+         const [formData, setFormData] = useState({
+            firstName: "",
+            lastName: "",
+            tel: "",
+            password: "",
+            agree: false,
+          });
+
+        const handleClick = (e) => {
+  e.preventDefault();
+
+   if (!formData.tel.trim() || !formData.password.trim()) {
+      alert("Please fill in both Email and Password.");
+      return;
+    }   
+  if (formData.tel !== formData.password) {
+    alert("Passwords do not match");
+    return;
+  }
+  
+
+  setIsLoading(true);
+  setTimeout(() => {
+    setIsLoading(false);
+    navigate("/login");
+  }, 2000);
+};
+          const handleChange = (e) => {
+            const { name, value, type, checked } = e.target;
+            setFormData((prev) => ({
+              ...prev,
+              [name]: type === "checkbox" ? checked : value,
+            }));
+          };
+        
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            console.log("Submitted:", formData);
+          };
+          const [isLoading, setIsLoading] = useState(false);
+        
+        
   return (
-    <div className='container flex flex-col-reverse md:grid grid-cols-2 md:gap-[32px]' >
+       <div className='container flex flex-col-reverse md:grid grid-cols-2 md:gap-[32px]' >
          <div>
          <Link to={"/"}> <img
             className=" hidden md:block w-[24px]"
@@ -47,15 +61,15 @@ const Forgorpass = () => {
             alt="Loginsvg"
           /></Link>
           <h1 className=" py-5 md:py-10 text-[20px] md:text-[40px] text-black-black leading-[130%] font-semibold font-Inter">
-           Forgot password?
+          Create password?
           </h1>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input
               name="tel"
-              placeholder="Enter your number"
-              label="Phone number."
-              type="text"
+              placeholder="Enter password"
+              label="Change password"
+             type={show ? "text" : "password"}
               value={formData.tel}
               onChange={handleChange}
             />
@@ -63,8 +77,8 @@ const Forgorpass = () => {
 
             <Input
               name="password"
-              placeholder="OTP"
-              label="Enter OTP"
+              placeholder="Re-enter password"
+              label="Re-enter password"
              type={show ? "text" : "password"}
               value={formData.password}
               onChange={handleChange}
@@ -75,16 +89,14 @@ const Forgorpass = () => {
             </div>
             </div>
 
-            <Button
+           <Link to={"/login"}> <Button
               onClick={handleClick}
               loading={isLoading}
               size="cutom1"
               className="text-center mb-5 max-w-full w-full leading-[130%] font-Inter font-normal"
             >
-              
-                
-              Next
-            </Button>
+              Log in
+            </Button></Link>
 
             <p className="font-Inter mb-[30px]  text-center font-normal text-sm  md:text-base leading-[100%] ">
               Don,t have an Account?{" "}
@@ -111,11 +123,11 @@ const Forgorpass = () => {
             src={Loginsvg}
             alt="Loginsvg"
           /></Link>
-          <img src={"http://localhost:3000/upload/Lovepreet1753167708294.png"} alt="Main Visual" />
-          
+                   <img src={"http://localhost:3000/upload/Lovepreet1753167708294.png"} alt="Main Visual" />
+
         </div>
     </div>
   );
 }
 
-export default Forgorpass;
+export default Creatpass;

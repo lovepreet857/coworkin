@@ -60,19 +60,6 @@
         "text2":" Meeting Room",
         "text3":"Coffee Included"
 
-    },
-     {
-        "mainimg":"public/img/featured_png.png",
-        "titel":"WorkNest Collective",
-        "locationsvg":"public/svg/featured_location.svg",
-        "locationname":"Delhi, India",
-        "price":"₹180/hr",
-        "stersvg":"public/svg/featured_star.svg",
-        "reviews":"4.8 (158 Reviews)",
-       "text1":"Pet Friendly",
-        "text2":"Shared Desk",
-        "text3":" Air Conditioning"
     }
-    
     
 ]

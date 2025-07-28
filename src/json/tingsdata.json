@@ -1,0 +1,24 @@
+[
+  {
+    "section": "Office rules",
+    "items": [
+      "Check-in after 1:00 pm",
+      "Checkout before 11:00am",
+      "2 person maximum"
+    ]
+  },
+  {
+    "section": "Safety & property",
+    "items": [
+      "Carbon monoxide alarm not reported",
+      "Smoke alarm are not repeted",
+      "Exterior security on property"
+    ]
+  },
+   {
+    "section": "Cancellation policy",
+    "items": [
+      "Add your trip to get cancellation details for this stay."
+    ]
+  }
+]

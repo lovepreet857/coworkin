@@ -1,0 +1,12 @@
+[
+    {
+        "titel": "Workspace Commons",
+        "mainimg": "public/img/detailmaiimg.png",
+        "images": [
+            "public/img/detail1img.png",
+            "public/img/detail2img.png",
+            "public/img/detail3img.png",
+            "public/img/detail4img.png"
+        ]
+    }
+]

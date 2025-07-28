@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Workssvg1 from "../../../public/svg/workssvg1.svg";
 import Workssvg2 from "../../../public/svg/workssvg2.svg";
 import Button from '../ui/Button';
 const Profect = ({Workhaeding,Workparagraph}) => {
+    const [isSearchLoading, setIsSearchLoading] = useState(false);
+  
   return (
    <>
     <div className='container pt-[30px] md:pt-[60px] pb-[30px] md:pb-[60px]'>
@@ -19,7 +21,15 @@ const Profect = ({Workhaeding,Workparagraph}) => {
               </p>
               <div className='flex flex-col items-center gap-7  '>
                  <Button 
-            size="lg"
+               size="lg"
+                 loading={isSearchLoading}
+                   onClick={() => {
+                setIsSearchLoading(true);
+                setTimeout(() => {
+                  setIsSearchLoading(false);
+                  navigate("/login");
+                }, 2000);
+              }}
             className="leading-[130%] cursor-pointer rounded-[12px] font-Inter font-normal" >
               Find a Workspace
              </Button>

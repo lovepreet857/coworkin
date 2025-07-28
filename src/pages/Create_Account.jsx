@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Loginsvg from "../../public/svg/login_arrow-left.svg";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
-import Google from "../../public/svg/creat_google.svg"
-import Mainimg from "../../public/img/loginig.png"
-import { Link } from "react-router-dom";
+import Google from "../../public/svg/creat_google.svg";
+import { Link, useNavigate } from "react-router-dom";
+
 const Create_Account = () => {
+  const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -22,45 +26,77 @@ const Create_Account = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleClick = async (e) => {
     e.preventDefault();
-    console.log("Submitted:", formData);
+
+    // validation
+    if (!formData.firstName.trim() || !formData.lastName.trim()) {
+      alert("Please fill in both First Name and Last Name.");
+      return;
+    }
+
+    if (!formData.email.trim() || !formData.password.trim()) {
+      alert("Please fill in both Email and Password.");
+      return;
+    }
+
+    if (!formData.agree) {
+      alert("Please accept the terms.");
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const response = await axios.post("http://localhost:3000/api/register", {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        password: formData.password,
+      });
+
+      if (response.status === 201 || response.status === 200) {
+        alert("Account created successfully!");
+        navigate("/login");
+      } else {
+        alert("Something went wrong. Try again.");
+      }
+    } catch (error) {
+      console.error("Error creating account:", error);
+      alert(error.response?.data?.message || "Failed to register.");
+    } finally {
+      setIsLoading(false);
+    }
   };
-    const [isLoading, setIsLoading] = useState(false);
-    
-      const handleClick = () => {
-        setIsLoading(true);
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 2000);
-      };
+
   return (
     <div className="container flex flex-col-reverse md:grid grid-cols-2 md:gap-[32px] ">
       <div>
-        <Link to={"/"}><img className=" hidden md:block w-[24px]" src={Loginsvg} alt="Loginsvg" /></Link>
+        <Link to={"/"}>
+          <img className=" hidden md:block w-[24px]" src={Loginsvg} alt="Loginsvg" />
+        </Link>
         <h1 className=" py-5 md:py-10 text-[20px] md:text-[40px] text-black-black leading-[130%] font-semibold font-Inter">
           Create Account
         </h1>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form className="space-y-4">
           <div className="grid grid-cols-2 gap-[32px] max-w-full">
             <Input
               name="firstName"
-              placeholder=" First Name"
+              placeholder="First Name"
               label="First Name"
               value={formData.firstName}
               onChange={handleChange}
-              className=""
             />
             <Input
               name="lastName"
-              placeholder=" Last Name"
+              placeholder="Last Name"
               label="Last Name"
               value={formData.lastName}
               onChange={handleChange}
-              className=""
             />
           </div>
+
           <Input
             name="email"
             placeholder="Enter your E-mail"
@@ -69,6 +105,7 @@ const Create_Account = () => {
             value={formData.email}
             onChange={handleChange}
           />
+
           <Input
             name="password"
             placeholder="Create Password"
@@ -89,28 +126,48 @@ const Create_Account = () => {
               className="text-xs md:text-base font-normal font-Inter leading-[130%]"
               htmlFor="agree"
             >
-              I agree with{" "}
-              <span className="text-natural-blue border-b">terms</span> and{" "}
-              <span className="text-natural-blue border-b">privacy policy</span>{" "}
+              I agree with <span className="text-natural-blue border-b">terms</span> and{" "}
+              <span className="text-natural-blue border-b">privacy policy</span>
             </label>
           </div>
 
-          <Button onClick={handleClick} loading={isLoading} size="cutom1" className="text-center max-w-full w-full leading-[130%] font-Inter font-normal">Create Account</Button>
+          <Button
+            onClick={handleClick}
+            loading={isLoading}
+            size="cutom1"
+            className="text-center max-w-full w-full leading-[130%] font-Inter font-normal"
+          >
+            {isLoading ? "Creating..." : "Create Account"}
+          </Button>
+
           <div className="justify-center items-center gap-5 flex py-5 text-base font-Inter font-normal leading-[100%]">
-            <span className="max-w-[120px] w-full border-dark2-grya  h-0 border md:hidden "></span>
+            <span className="max-w-[120px] w-full border-dark2-grya h-0 border md:hidden "></span>
             Or
             <span className="max-w-[120px]  w-full border-dark2-grya h-0 border md:hidden "></span>
           </div>
-          <div className=" py-[10px] md:py-[21px] bg-Flash-White items-center flex justify-center gap-5 rounded-[12px]">
+
+          <div className="py-[10px] md:py-[21px] bg-Flash-White items-center flex justify-center gap-5 rounded-[12px]">
             <img src={Google} alt="Google" />
-            <h5 className="font-Inter font-medium text-xs md:text-[20px] leading-[130%]">Sign up With Google</h5>
+            <h5 className="font-Inter font-medium text-xs md:text-[20px] leading-[130%]">
+              Sign up With Google
+            </h5>
           </div>
-            <p className="font-Inter text-center font-normal text-sm  md:text-base leading-[100%] pt-[14px]">All ready have an Account?  <span className="text-natural-blue"><Link to={"/login"}>Log in</Link></span></p>
+
+          <p className="font-Inter text-center font-normal text-sm md:text-base leading-[100%] pt-[14px]">
+            Already have an Account?{" "}
+            <span className="text-natural-blue">
+              <Link to={"/login"}>Log in</Link>
+            </span>
+          </p>
         </form>
       </div>
+
       <div className="relative">
-      <Link to={"/"}> <img className=" absolute md:hidden w-[24px]" src={Loginsvg} alt="Loginsvg" /></Link> 
-        <img className="" src={Mainimg} alt="Mainimg" />
+        <Link to={"/"}>
+          <img className=" absolute md:hidden w-[24px]" src={Loginsvg} alt="Loginsvg" />
+        </Link>
+                  <img src={"http://localhost:3000/upload/Lovepreet1753167708294.png"} alt="Main Visual" />
+
       </div>
     </div>
   );

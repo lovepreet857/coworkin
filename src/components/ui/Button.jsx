@@ -26,7 +26,8 @@ const Button = ({
     md: "px-10 py-3 text-sm lg:px-10 lg:py-5 lg:text-base",
     lg: "lg:px-[60px] md:px-[30px] md:py-4 px-[24px] py-3 sm:py-[18px] text-sm sm:text-[24px]",
     xl:"py-[14px] px-[105px] sm:px-[110px] text-sm sm:text-[22px]",
-    cutom1:" py-3 md:py-[20px] text-xs md:text-[20px]"
+    cutom1:" py-3 md:py-[20px] text-xs md:text-[20px]",
+    custom2:"text-center py-[18px]"
   }[size];
 
   return (

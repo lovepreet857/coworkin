@@ -10,6 +10,7 @@ const Input = ({ label,
   required = false,
   className = '',
   checked,
+  tel,
   ...rest
 }) => {
   return (

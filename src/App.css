@@ -7,6 +7,8 @@
   --color-black-black: #000000;
   --color-dark-grya:#555555;
   --color-dark2-grya:#55555533;
+  --color-dark3-grya:#5555551F;
+  --color-dark4-grya:#55555580;
 
   --color-natural-orange:#EAA423;
   --color-Flash-White:#F0F0F0;
@@ -15,7 +17,7 @@
 
   --color-natural-blue:#480CED;
   --color-secondery-blue:#6A39F2;
-  --color-pramery-blue:#765AFF;
+  --color-pramery-blue:
 
 }
 @layer utilities {
