@@ -70,7 +70,7 @@ const detailWorkspace = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-10 md:pb-10 pb-[43px] pt-6 pl-5 md:p-0 border-b border-dark4-grya">
+            <div className="flex flex-col gap-10 md:pb-10 pb-[43px] pt-6 pl-5 md:p-0 ">
               {Detaildata2.map((item, index) => (
                 <div className="flex items-center gap-[27px] " key={index}>
                   <img src={item.svg} alt="" />

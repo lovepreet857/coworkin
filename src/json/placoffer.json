@@ -1,0 +1,46 @@
+[
+    {
+        "placesvg":"public/svg/offer_lock.svg",
+        "text1":"Lock on bedroom door"
+    },
+    {
+        "placesvg":"public/svg/offer_kitchen.svg",
+        "text1":"Kitchen"
+    },
+     {
+        "placesvg":"public/svg/offer_wifi.svg",
+        "text1":"Wifi"
+    },
+      {
+        "placesvg":"public/svg/offer_streamline.svg",
+        "text1":"Dedicated workspace"
+    },
+     {
+        "placesvg":"public/svg/offer_car.svg",
+        "text1":"Free parking on permises"
+    },
+     {
+        "placesvg":"public/svg/offer_tv.svg",
+        "text1":"TV"
+    },
+     {
+        "placesvg":"public/svg/offer_temperature.svg",
+        "text1":"Ac"
+    },
+       {
+        "placesvg":"public/svg/offer_park.svg",
+        "text1":"Exterioe security cameras onperperty"
+    },
+     {
+        "placesvg":"public/svg/offer_symbols.svg",
+        "text1":"Carbon monooxide alaram"
+    },
+    
+   
+    
+  
+     {
+        "placesvg":"public/svg/offer_material.svg",
+        "text1":"Smoking alarm"
+    }
+]
