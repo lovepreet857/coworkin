@@ -6,15 +6,19 @@ import Featureddata from "../../json/featured.json"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useNavigate } from "react-router-dom";
 const Featured = ({ Workhaeding, Workparagraph }) => {
      const [loadingId, setLoadingId] = useState(null);
+  const Navigate = useNavigate();
+
     
      const handleClick = (id) => {
-  setLoadingId(id); // 👈 only this button shows loader
+  setLoadingId(id); 
 
   setTimeout(() => {
-    alert("Sorry data not fached");
-    setLoadingId(null); // reset after loading
+    setLoadingId(null);
+    Navigate("/browse");
+      // reset after loading
   }, 2000);
 };
   return (
@@ -90,7 +94,7 @@ const Featured = ({ Workhaeding, Workparagraph }) => {
               </div>
               <p className="text-natural-orange font-Inter font-normal text-base leading-[130%]">{iteam.price}</p>
             </div>
-            <Button size="xl"  onClick={() => handleClick(index)}  loading={loadingId === index}>
+            <Button size="xl"  onClick={() => handleClick(index)}   loading={loadingId === index}>
                  View Details
             </Button>
           </div>

@@ -1,0 +1,32 @@
+[
+    {
+        "titel": "Cleanliness",
+        "reting": "5.0",
+        "svg": "public/svg/carbon_clean.svg"
+    },
+    {
+        "titel": "Accuracy",
+        "reting": "5.0",
+        "svg": "public/svg/favourite_charm_tick.svg"
+    },
+    {
+        "titel": "Check-in",
+        "reting": "5.0",
+        "svg": "public/svg/favourite_icons_key.svg"
+    },
+    {
+        "titel": "Communication",
+        "reting": "5.0",
+        "svg": "public/svg/favourite_communication.svg"
+    },
+    {
+        "titel": "Location",
+        "reting": "5.0",
+        "svg": "public/svg/favourite_map-outline.svg"
+    },
+    {
+        "titel": "Value",
+        "reting": "5.0",
+        "svg": "public/svg/favourite_tag.svg"
+    }
+]

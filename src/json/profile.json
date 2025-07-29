@@ -1,0 +1,47 @@
+[
+   {
+        "pofilesvg": "public/svg/profilephoto1.svg",
+        "name": "Aman K.",
+        "dateborth": "3 year on Cowork Mate",
+        "stars": "public/svg/stars5.svg",
+        "date": "May 2025",
+        "pragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.....",
+        "show":"Show more"
+    },
+     {
+        "pofilesvg": "public/svg/profilephoto2.svg",
+        "name": "Aman K.",
+        "dateborth": "1 year on Cowork Mate",
+        "stars": "public/svg/stars5.svg",
+        "date": "Feb 2025",
+        "pragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.....",
+        "show":"Show more"
+    },
+     {
+        "pofilesvg": "public/svg/profilephoto3.svg",
+        "name": "Rahul s.",
+        "dateborth": "4 year on Cowork Mate",
+        "stars": "public/svg/stars5.svg",
+        "date": "August 2024",
+        "pragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.....",
+        "show":"Show more"
+    },
+     {
+        "pofilesvg": "public/svg/profilephoto4.svg",
+        "name": "Sonal k.",
+        "dateborth": "2.5 year on Cowork Mate",
+        "stars": "public/svg/stars5.svg",
+        "date": "Jan 2025",
+        "pragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.....",
+        "show":"Show more"
+    },
+     {
+        "pofilesvg": "public/svg/profilephoto5.svg",
+        "name": "Vedika d.",
+        "dateborth": "10 month on Cowrking",
+        "stars": "public/svg/stars5.svg",
+        "date": "Sep 2025",
+        "pragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.....",
+        "show":"Show more"
+    }
+]
