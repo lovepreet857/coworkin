@@ -10,6 +10,7 @@ import Forgorpass from './pages/Forgorpass';
 import Creatpass from './pages/Creatpass';
 import Browse from './pages/Browse';
 import Detail_Page from './pages/Detail_Page';
+import Profile from './pages/Profile';
 const App = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const App = () => {
       <Route path='/creatpass' element={<Creatpass/>} />
       <Route path='/browse' element={<Browse/>} />
       <Route path='/detail' element={<Detail_Page/>} />
+      <Route path='/profile' element={<Profile/>} />
 
 
 

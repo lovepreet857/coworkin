@@ -16,7 +16,7 @@ const Workspaces = () => {
         <img className='hidden lg:block' src="public/svg/browse_arrow_down.svg" alt="" />
       </div>
        <div className='flex py-[10px] md:py-[30px]  gap-[42px]  px-[10px]  lg:pl-5 lg:pr-[57px] border-r border-dark2-grya'>
-        <p className='font-Inter font-normal text-[10px] md:text-lg leading-[100%]'>Price range</p>
+        <p className='font-Inter font-normal text-[10px] md:text-lg leading-[100%]'>Amenities</p>
       </div>
       <div className=' px-[10px] flex items-center rounded-r-[12px]  md:px-10 bg-natural-blue '>
 

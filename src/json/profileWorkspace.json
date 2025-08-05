@@ -1,0 +1,23 @@
+[
+    {
+        "imgmai":"public/svg/profilesvg.svg",
+        "tetel":"CoworKly",
+        "price":"₹199/hr"
+    },
+     {
+        "imgmai":"public/svg/profilesvg2.svg",
+        "tetel":"CoworKly",
+        "price":"₹199/hr"
+    },
+       {
+        "imgmai":"public/svg/profilesvg3.svg",
+        "tetel":"CoworKly",
+        "price":"₹199/hr"
+    },
+           {
+        "imgmai":"public/svg/profilesvg3.svg",
+        "tetel":"CoworKly",
+        "price":"₹199/hr"
+    }
+
+]

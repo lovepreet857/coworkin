@@ -24,7 +24,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex items-center gap-[30px] cursor-pointer">
           <img className=" rounded-full p-1 hover:bg-Flash-White" src={Headerbell} alt="" />
-          <img className=" rounded-full p-1 hover:bg-Flash-White" src={Headeruser} alt="" />
+          <Link to={"/profile"}> <img className=" rounded-full p-1 hover:bg-Flash-White" src={Headeruser} alt="" /></Link>
           <img className=" rounded-full p-1 hover:bg-Flash-White" src={Headersearsh} alt="" />
         </div>
         <button

@@ -4,6 +4,7 @@ const favourite = () => {
   return (
     <>
       <div className="container pt-5 md:pt-[50px]">
+       
         <div className="flex justify-center mb-[85px] md:mb-0  items-center">
           <div className="">
             <div className="flex gap-3 justify-center  items-center ">

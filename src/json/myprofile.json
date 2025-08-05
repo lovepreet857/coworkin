@@ -1,0 +1,18 @@
+[
+    {
+        "myimgs":"public/svg/myprofile_symbols.svg",
+        "text":"Dashboard Home"
+    },
+    {
+         "myimgs":"public/svg/myprofile_heart.svg",
+        "text":"My Bookings"
+    },
+     {
+         "myimgs":"public/svg/myprofile_heart.svg",
+        "text":"Saved Workspaces"
+    },
+     {
+         "myimgs":"public/svg/myprofile_user.svg",
+        "text":"Profile Setting"
+    }
+]

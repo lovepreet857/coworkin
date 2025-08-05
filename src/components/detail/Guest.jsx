@@ -95,9 +95,27 @@ const Guest = () => {
         }
    </Swiper>
 </div>
-        <div>
+        <div className='md:pb-[50px] '>
           <h1 className='underline leading-[130%] text-xs md:font-medium font-medium font-Inter mt-5 text-center sm:text-start md:mt-[50px]'>Learn how work review works</h1>
         </div>
+       <div className='flex flex-col gap-5 md:gap-y-[30px] max-w-[1320px] border-y border-dark4-grya py-5 md:py-[50px]'>
+  <div>
+    <h4 className='font-Inter font-medium  text-base md:text-[22px] leading-[100%] pb-[10px] md:p-2'>Where you’ll be</h4>
+    <p className='font-Inter font-normal text-xs md:text-[20px] leading-[150%] text-dark-grya'>
+      Lorem Ipsum is simply dummy text of the printing.
+    </p>
+  </div> 
+  <div>
+    <iframe
+      className='h-[500px] w-full rounded-[7px]'
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.839184214203!2d75.78850607542802!3d26.89334027664639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5e0d6792a3d%3A0x6a6ab7894204d6c7!2sHawa%20Mahal!5e0!3m2!1sen!2sin!4v1692097407860!5m2!1sen!2sin"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
       </div>
     </>
   )
