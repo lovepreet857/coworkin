@@ -7,6 +7,7 @@ import Myboocking from "../components/mainprofile/myboocking";
 import Profileworkspace from "../components/mainprofile/profilrworkspace";
 import ProfileSettings from "../components/mainprofile/ProfileSettings";
 import Boockingpage from "../components/mainprofile/boockingpage";
+import Settings from "../components/mainprofile/Settings";
 const Profile = () => {
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
@@ -59,6 +60,16 @@ const Profile = () => {
           {step === 2 && (
             <div>
               <Boockingpage />
+            </div>
+          )}
+            {step === 3  && (
+            <div>
+              
+            </div>
+          )}
+           {step === 4  && (
+            <div>
+              <Settings/>
             </div>
           )}
         </div>
