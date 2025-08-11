@@ -1,10 +1,10 @@
-import React from "react";
-import Availdata from "../../json/available.json";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-const availabledata = ({text,img}) => {
+const availabledata = ({text,img ,data}) => {
+
   return (
     <>
       <div className="container">
@@ -38,15 +38,15 @@ const availabledata = ({text,img}) => {
             },
           }}
         >
-          {Availdata.map((item, index) => (
+          {data.map((item, index) => (
             <SwiperSlide
               key={index}
               className=" mt-[32px] rounded-[12px] overflow-x-hidden mb-[30px] md:mb-[50px]  max-w-[419px] w-full"
             >
-              <Link to={"/detail"}><img src={item.mainimg} alt="" /></Link>
+              <Link to={"/detail"}><img src={`http://localhost:3000/upload/${item.mainImgPath}`} alt="" /></Link>
               <div className="">
                 <h2 className="pb-[6px] pt-3 md:pt-[14px] font-Inter font-medium text-lg sm:text-[22px] leading-[100%]">
-                  {item.text}
+                  {item.name}
                 </h2>
                 <span className="flex items-center gap-1 pb-[22px] md:pb-[22px]">
                   <p className="font-Inter font-normal text-base sm:text-lg leading-[100%]">
@@ -54,11 +54,11 @@ const availabledata = ({text,img}) => {
                   </p>
                   <span className="flex items-center gap-[10px]">
                     <p className="font-Inter font-normal text-base sm:text-lg leading-[100%]">
-                      {item.price}
+                      ₹{item.price}
                     </p>
-                    <img src={item.star} alt="" />
+                    <img src={`http://localhost:3000/upload/${item.raitingImgPath}`} alt="" />
                     <p className="font-Inter font-normal text-base sm:text-lg leeleading-[100%]">
-                      {item.rating}
+                      {item.raiting}
                     </p>
                   </span>
                 </span>

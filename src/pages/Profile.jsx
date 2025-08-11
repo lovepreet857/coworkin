@@ -4,23 +4,29 @@ import Logout from "../../public/svg/myprofile_logout.svg";
 import Profilepop from "../components/common/popups/profilepop";
 import Profileinfo from "../components/mainprofile/profileinfo";
 import Myboocking from "../components/mainprofile/myboocking";
-import Profileworkspace from "../components/mainprofile/profilrworkspace"
+import Profileworkspace from "../components/mainprofile/profilrworkspace";
+import ProfileSettings from "../components/mainprofile/ProfileSettings";
+import Boockingpage from "../components/mainprofile/boockingpage";
 const Profile = () => {
   const [showModal, setShowModal] = useState(false);
-  
+  const [step, setStep] = useState(1);
 
- 
   return (
     <>
       <div className="container justify-center flex gap-[32px] pt-5">
-        <div className=" xl:block hidden max-w-[419px] w-full bg-Flash-White py-[60px] rounded-[6px]">
+        <div className=" xl:block hidden max-w-[419px] w-full bg-Flash-White py-[60px] rounded-[6px] h-[867px]">
           <h1 className="text-center font-Inter font-semibold text-[36px] leading-[100%]">
             CoWork Mate
           </h1>
           <div className="h-[90px]"></div>
           {Myprofile.map((item, index) => (
-            <div key={index} className="">
-              <div className="hover:bg-pramery-blue flex w-full py-5 pl-10 items-center gap-4 ">
+            <div key={index}>
+              <div
+                className={`flex w-full py-5 pl-10 items-center gap-4 
+        ${step === index + 1 ? "bg-pramery-blue" : "hover:bg-gray-100"}
+      `}
+                onClick={() => setStep(index + 1)} // Optional: make it clickable
+              >
                 <img src={item.myimgs} alt="myimgs" />
                 <p className="leading-[130%] text-[22px] font-Inter font-normal">
                   {item.text}
@@ -28,6 +34,7 @@ const Profile = () => {
               </div>
             </div>
           ))}
+
           <div className="h-[298px]"></div>
           <div
             onClick={() => setShowModal(true)}
@@ -38,16 +45,23 @@ const Profile = () => {
               Logout
             </p>
           </div>
-          {showModal && (
-           <Profilepop/>
-          )}
+          {showModal && <Profilepop />}
         </div>
         <div className="max-w-[869px] w-full">
-         <Profileinfo/>
-         <Myboocking/>
-         <Profileworkspace/>
+          {step === 1 && (
+            <div className="">
+              <Profileinfo />
+              <Myboocking />
+              <Profileworkspace />
+              <ProfileSettings />
+            </div>
+          )}
+          {step === 2 && (
+            <div>
+              <Boockingpage />
+            </div>
+          )}
         </div>
-       
       </div>
     </>
   );

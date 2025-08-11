@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 const Featured = ({ Workhaeding, Workparagraph }) => {
   const [loadingId, setLoadingId] = useState(null);
   const Navigate = useNavigate();
-
   const handleClick = (id) => {
     setLoadingId(id);
 

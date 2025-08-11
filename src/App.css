@@ -12,6 +12,7 @@
   --color-dark3-grya:#5555551F;
   --color-dark4-grya:#55555580;
   --color-dark5-grya:#D9D9D9;
+  --color-dark6-grya:#3835611A;
 
   --color-natural-orange:#EAA423;
   --color-Flash-White:#F0F0F0;
@@ -21,7 +22,7 @@
   --color-natural-blue:#480CED;
   --color-secondery-blue:#6A39F2;
   --color-pramery-blue:#CCDAFF;
-
+--color-pramery-purpal:#38356180;
 }
 @layer utilities {
   .container {

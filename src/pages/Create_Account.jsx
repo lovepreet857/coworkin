@@ -3,7 +3,6 @@ import axios from "axios";
 import Loginsvg from "../../public/svg/login_arrow-left.svg";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
-import Google from "../../public/svg/creat_google.svg";
 import { Link, useNavigate } from "react-router-dom";
 
 const Create_Account = () => {
@@ -48,10 +47,10 @@ const Create_Account = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3000/api/register", {
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
+      const response = await axios.post("http://localhost:3000/api/create", {
+        firstname: formData.firstName,
+        lastname: formData.lastName,
+       email: formData.email,
         password: formData.password,
       });
 
@@ -147,7 +146,7 @@ const Create_Account = () => {
           </div>
 
           <div className="py-[10px] md:py-[21px] bg-Flash-White items-center flex justify-center gap-5 rounded-[12px]">
-            <img src={Google} alt="Google" />
+            <img src={"http://localhost:3000/upload/ashish1754891300543.svg"} alt="Google" />
             <h5 className="font-Inter font-medium text-xs md:text-[20px] leading-[130%]">
               Sign up With Google
             </h5>
@@ -166,7 +165,7 @@ const Create_Account = () => {
         <Link to={"/"}>
           <img className=" absolute md:hidden w-[24px]" src={Loginsvg} alt="Loginsvg" />
         </Link>
-                  <img src={"http://localhost:3000/upload/Lovepreet1753167708294.png"} alt="Main Visual" />
+                   <img src={"http://localhost:3000/upload/ashish1753160504473.png"} alt="Main Visual" />
 
       </div>
     </div>

@@ -182,10 +182,10 @@ const Login = () => {
             </div>
 
             <div className="justify-between m-auto flex max-w-[427px]">
-              <img className="h-[30px]" src={"http://localhost:3000/upload/Lovepreet1753169314019.svg"} alt="Google" />
-              <img src={"http://localhost:3000/upload/Lovepreet1753168756638.svg"} alt="Facebook" />
-              <img src={"http://localhost:3000/upload/Lovepreet1753169187365.svg"} alt="Apple" />
-              <img src={"http://localhost:3000/upload/Lovepreet1753169033370.svg"} alt="Twitter" />
+               <img className="h-[30px]" src={"http://localhost:3000/upload/ashish1754891300543.svg"} alt="Google" />
+              <img src={"http://localhost:3000/upload/ashish1754891300541.svg"} alt="Facebook" />
+              <img src={"http://localhost:3000/upload/ashish1754891423796.svg"} alt="Apple" />
+              <img src={"http://localhost:3000/upload/ashish1754891347492.svg"} alt="Twitter" />
             </div>
           </form>
         </div>
@@ -198,7 +198,7 @@ const Login = () => {
               alt="Back"
             />
           </Link>
-          <img src={"http://localhost:3000/upload/Lovepreet1753167708294.png"} alt="Main Visual" />
+          <img src={"http://localhost:3000/upload/ashish1753160504473.png"} alt="Main Visual" />
         </div>
       </div>
     </>
